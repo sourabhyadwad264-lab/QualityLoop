@@ -1,0 +1,23 @@
+:root {
+  --ink: #1f2933;
+  --steel: #3e4c59;
+  --paper: #f5f7fa;
+  --line: #cbd2d9;
+  --brand: #0b6e4f;
+}
+body { background: var(--paper); color: var(--ink); font-family: "Segoe UI", system-ui, sans-serif; }
+.app-header { background: var(--ink); color: #fff; padding: 14px 0; border-bottom: 4px solid var(--brand); }
+.app-header h1 { font-size: 1.4rem; margin: 0; letter-spacing: .3px; }
+.app-header small { color: #9aa5b1; }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 18px; }
+.defect-row { cursor: pointer; border-left: 5px solid var(--line); }
+.defect-row:hover { background: #eef2f6; }
+.sev-LOW { border-left-color: #7bc47f; }
+.sev-MEDIUM { border-left-color: #f0b429; }
+.sev-HIGH { border-left-color: #f7803d; }
+.sev-CRITICAL { border-left-color: #d64545; }
+.stage { display: flex; gap: 6px; margin-bottom: 14px; }
+.stage span { flex: 1; text-align: center; padding: 6px; font-size: .85rem; background: #e4e7eb; color: var(--steel); }
+.stage span.on { background: var(--brand); color: #fff; font-weight: 600; }
+.audit li { border-left: 3px solid var(--line); padding: 4px 10px; margin-bottom: 6px; list-style: none; }
+:focus-visible { outline: 3px solid #1c7ed6; outline-offset: 2px; }

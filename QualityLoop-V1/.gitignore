@@ -1,0 +1,22 @@
+# Java / Maven
+target/
+*.class
+
+# Node.js
+node_modules/
+dist/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# IDE files
+.project
+.classpath
+.settings/
+.idea/
+.vscode/
+
+# Logs
+*.log

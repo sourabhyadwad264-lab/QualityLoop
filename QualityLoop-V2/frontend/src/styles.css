@@ -1,0 +1,37 @@
+:root {
+  --ink: #1f2933;
+  --steel: #3e4c59;
+  --paper: #f5f7fa;
+  --line: #cbd2d9;
+  --brand: #0b6e4f;
+}
+body { background: var(--paper); color: var(--ink); font-family: "Segoe UI", system-ui, sans-serif; }
+.app-header { background: var(--ink); color: #fff; padding: 14px 0; border-bottom: 4px solid var(--brand); }
+.app-header h1 { font-size: 1.4rem; margin: 0; letter-spacing: .3px; }
+.app-header small { color: #9aa5b1; }
+.tabs { display: flex; gap: 4px; margin-top: 10px; }
+.tabs button { background: transparent; border: 0; color: #cbd2d9; padding: 6px 14px; border-bottom: 3px solid transparent; }
+.tabs button.on { color: #fff; border-bottom-color: #3ebd93; font-weight: 600; }
+.panel { background: #fff; border: 1px solid var(--line); border-radius: 4px; padding: 18px; }
+.defect-row { cursor: pointer; border-left: 5px solid var(--line); }
+.defect-row:hover { background: #eef2f6; }
+.sev-LOW { border-left-color: #7bc47f; }
+.sev-MEDIUM { border-left-color: #f0b429; }
+.sev-HIGH { border-left-color: #f7803d; }
+.sev-CRITICAL { border-left-color: #d64545; }
+.stage { display: flex; gap: 6px; margin-bottom: 14px; }
+.stage span { flex: 1; text-align: center; padding: 6px; font-size: .85rem; background: #e4e7eb; color: var(--steel); }
+.stage span.on { background: var(--brand); color: #fff; font-weight: 600; }
+.audit li { border-left: 3px solid var(--line); padding: 4px 10px; margin-bottom: 6px; list-style: none; }
+.login-wrap { max-width: 420px; margin: 8vh auto; }
+.stat { text-align: center; padding: 14px; border: 1px solid var(--line); background: #fff; border-radius: 4px; }
+.stat .num { font-size: 2rem; font-weight: 600; line-height: 1.1; }
+.share-box { background: #eef6f2; border: 1px solid #b7dccc; border-radius: 4px; padding: 12px; }
+.sheet { background: #fff; max-width: 820px; margin: 24px auto; padding: 32px; border: 1px solid var(--line); }
+.sheet th { width: 190px; color: var(--steel); font-weight: 600; vertical-align: top; }
+:focus-visible { outline: 3px solid #1c7ed6; outline-offset: 2px; }
+@media print {
+  .no-print { display: none !important; }
+  body { background: #fff; }
+  .sheet { border: 0; margin: 0; padding: 0; max-width: none; }
+}

@@ -1,0 +1,12 @@
+package com.qualityloop.dto;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+
+public record RegisterRequest(
+        @NotBlank(message = "Username is required") @Size(min = 3, max = 40, message = "Username must be 3 to 40 characters") String username,
+        @NotBlank(message = "Password is required") @Size(min = 6, max = 60, message = "Password must be at least 6 characters") String password,
+        @NotBlank(message = "Full name is required") @Size(max = 100) String fullName,
+        @Email(message = "Email is not valid") String email) {
+}
